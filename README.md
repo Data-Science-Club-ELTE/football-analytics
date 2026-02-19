@@ -5,8 +5,10 @@
 
 ## Brief project description
 
-> [!IMPORTANT]
-> 1-3 sentences about the project. This shall be a high-level overview with little to no technical details.
+Hungarian football currently lacks strong competition in the field of performance analytics, creating an opportunity to build a modern, scalable analytics platform. The aim of this project is to develop an application that extracts football insights from freely available data and match videos, turning them into actionable information for clubs.
+The system will analyze matches and individual players to reveal patterns that support training decisions, match preparation, and player recruitment. Each club would receive team-specific insights, with the long-term goal of working together to unlock more value from their internal data.
+The project started with the intention of supporting Győri ETO as a proof of concept, but the platform is designed to scale to any Hungarian club interested. The ultimate objective is to uncover the underlying information within matches and player performance, helping teams gain a competitive advantage.
+
 
 ## Team
 
