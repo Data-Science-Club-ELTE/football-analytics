@@ -1,8 +1,3 @@
-# Data Science Club Project Template
-
-> [!IMPORTANT]
-> We ask **Project Leaders** to replace these blocks marked as `Important` with the actual project details.
-
 ## Brief project description
 
 Hungarian football currently lacks strong competition in the field of performance analytics, creating an opportunity to build a modern, scalable analytics platform. The aim of this project is to develop an application that extracts football insights from freely available data and match videos, turning them into actionable information for clubs.
@@ -24,23 +19,32 @@ The project started with the intention of supporting Győri ETO as a proof of co
 
 ## The *Problem* behind the project
 
-> [!IMPORTANT]
-> If you have already outlined the problem that your project is trying to create a solution for, then please introduce it briefly. Otherwise, replace it later.
+Hungarian football clubs have limited access to affordable, high-quality performance analytics tools that can turn match data and video into practical, decision-support insights. While elite international teams increasingly rely on data-driven analysis for training, match preparation, and recruitment, most domestic clubs lack the infrastructure and expertise to extract meaningful value from available data sources.
+As a result, valuable information hidden in match footage and publicly available datasets remains unused, creating a competitive gap. There is a need for a scalable analytics solution that can transform raw football data into clear, team-specific insights, enabling Hungarian clubs to make more informed sporting and strategic decisions.
+
 
 ## Challenges
 
-> [!IMPORTANT]
-> Here you may list challenges that make the project idea / problem less straightforward from a *Data Science* point of view.
+-	Limited data to hungarian matches -> we need to collect, and start a database
+-	Dificult and Tedious Data Engineering -> Get the sub-minute data from a football match
+
 
 ## Expectations
 
-> [!IMPORTANT]
-> If you have an expectation about the outcomes of your project, then please outline it briefly. Otherwise, leave it unchanged.
+-	Plots about given metrics like xG, PSxG, passing networks
+-	Simulations of a given matches, given leagues. Goal distribution. 
+-	Result interpretation PDFs
+
 
 ## Tools & Technologies
 
-> [!IMPORTANT]
-> Please list the tools that you expect to work with in the project. (e.g.: `Python`, `R`, `NumPy`, `Pandas`, `Matplotlib`, etc.)
+-	Languages: Python, SQL
+-	Data Processing: Pandas, NumPy,
+-	Machine Learning: Scikit-learn, XGBoost, PyTorch
+-	Visualization: Matplotlib, Seaborn
+-	Storage: SQL databases
+-	Collaboration: Git, GitHub
+-	Anything else that is new is welcome, I would like to try new technologies
 
 ## How to run the Project
 
