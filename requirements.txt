@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+mplsoccer
+statsbombpy
+sqlalchemy>=2.0
+psycopg2-binary
+alembic
+python-dotenv
+pydantic-settings
+fastapi
+uvicorn[standard]
+streamlit
+requests
+pytest
+httpx
+pytest-cov
