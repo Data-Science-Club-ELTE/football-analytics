@@ -236,3 +236,42 @@ pip install numpy pandas matplotlib mplsoccer statsbombpy
 ```
 
 `statsbombpy` is only needed for loading StatsBomb data. If you're working with manually collected data (like FTC vs MTK), you only need `numpy`, `pandas`, `matplotlib`, and `mplsoccer`.
+
+---
+
+## Database Layer (PostgreSQL)
+
+The project includes a PostgreSQL database for persisting events and xT results. See the root `database/` directory.
+
+### Setup
+
+```bash
+# 1. Activate the virtual environment
+source venv/bin/activate        # Linux/Mac
+venv\Scripts\activate           # Windows
+
+# 2. Install all dependencies
+pip install -r requirements.txt
+
+# 3. Create a .env file from the example
+cp .env.example .env
+# Edit .env with your PostgreSQL connection string
+
+# 4. Create the database (in psql)
+# CREATE DATABASE football_analytics;
+
+# 5. Run migrations
+alembic upgrade head
+
+# 6. Seed with Barcelona 2017/18 data
+python -m database.seed
+```
+
+### Tables
+
+| Table | Description |
+|-------|-------------|
+| `competitions` | League + season metadata (links to StatsBomb IDs) |
+| `matches` | Individual match records with teams and date |
+| `events` | Every pass, carry, and shot with zones and coordinates |
+| `xt_results` | Computed xT values per zone, scoped to match or season |
