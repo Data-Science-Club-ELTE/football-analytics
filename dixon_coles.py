@@ -80,14 +80,15 @@ def predict_outcome(params, home_team, away_team, max_goals=8):
     
     return prob_home, prob_draw, prob_away
 
-# --- Execution ---
-print("Optimizing Dixon-Coles parameters for NB I...")
-params = solve_parameters(fizzdf)
+if __name__ == "__main__":
+    # --- Execution ---
+    print("Optimizing Dixon-Coles parameters for NB I...")
+    params = solve_parameters(fizzdf)
 
-# params
+    # params
 
-# Example: Ferencváros vs ETO FC
-h, d, a = predict_outcome(params, 'FERENCVÁROSI TC', 'ETO FC')
-print(f"\nPrediction for FERENCVÁROSI TC vs ETO FC:")
-print(f"Home Win: {h:.2%}, Draw: {d:.2%}, Away Win: {a:.2%}")
-print(f"Dixon-Coles Rho (Draw Adjustment): {params['rho']:.4f}")
+    # Example: Ferencváros vs ETO FC
+    h, d, a = predict_outcome(params, 'FERENCVÁROSI TC', 'ETO FC')
+    print(f"\nPrediction for FERENCVÁROSI TC vs ETO FC:")
+    print(f"Home Win: {h:.2%}, Draw: {d:.2%}, Away Win: {a:.2%}")
+    print(f"Dixon-Coles Rho (Draw Adjustment): {params['rho']:.4f}")
